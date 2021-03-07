@@ -76,7 +76,7 @@ PM_START_TEXT = """
 Hi {}!, my name is *{}*.
 Ada pertanyaan tentang cara menggunakan saya? Gunakan perintah /help
 
-Bergabunglah dengan *[Grup Kami](https://t.me/AnnabelleSupport)* Jika Anda ingin Melaporkan Masalah 🙃
+Bergabunglah dengan [Grup Kami](https://t.me/AnnabelleSupport) Jika Anda ingin Melaporkan Masalah 🙃
 
 Saya di sini untuk membuat pengelolaan grup Anda menyenangkan dan mudah!
 Saya memiliki banyak fitur praktis! seperti:
