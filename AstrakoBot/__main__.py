@@ -73,24 +73,37 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am a modular group management bot.
+Hi {}!, my name is *{}*.
+Ada pertanyaan tentang cara menggunakan saya? Gunakan perintah /help
 
-You can find my list of available commands with /help.
+Bergabunglah dengan *[Grup Kami](https://t.me/AnnabelleSupport)* Jika Anda ingin Melaporkan Masalah 🙃
+
+Saya di sini untuk membuat pengelolaan grup Anda menyenangkan dan mudah!
+Saya memiliki banyak fitur praktis! seperti:
+
+• Flood Control.
+• Note's Keeping System.
+• Warning System.
+• Predetermined Filters.
+
+*Made Whit ♥️ By :* [𝗛𝗔𝗡𝗭𝝣𝗥𝗚𝝣](https://t.me/hanzprjct)
+*Support By :* [𝐏𝐨𝐜𝐨𝐧𝐠 𝐎𝐧𝐥𝐞𝐧 ⍨ #𝙛𝙖𝙠𝙚𝙜𝙝𝙤𝙨𝙩🇮🇩](https://t.me/PoocongOnlen)
+
+Ingin menambahkan saya ke grup Anda? Cukup klik tombol di bawah!
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a modular group management bot and help admins manage their groups. Have a look at the following for an idea of some of \
-the things I can help you with.
+Hei yang disana! Nama saya adalah *{}*.
+Saya adalah Bot Manajemen untuk membantu admin mengelola grup mereka! Lihatlah yang berikut ini untuk mendapatkan gambaran tentang beberapa dari \
+hal-hal yang dapat saya bantu.
 
 *Main* commands available:
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
  • /donate: information on how to donate!
  • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
+ • in PM: will send you your settings for all supported modules.
+ • in a group: will redirect you to pm, with all that chat's settings.
 
 
 {}
@@ -100,12 +113,10 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-ASTRAKOBOT_IMG = "https://i.imgur.com/1oah5E2.jpg"
+ASTRAKOBOT_IMG = "https://telegra.ph/file/682b59e0f5a226b094081.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-AstrakoBot is hosted on its own server and doesn't require any donations as of now but \
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+DONATE_STRING = """Heya, senang mendengar Anda ingin berdonasi!
+𝔸𝐧𝐧𝐚𝐛𝐞𝐥𝐥𝐞 dihosting di server gratis dan memerlukan donasi jika kamu mau berdonasi, Anda dapat berdonasi dengan [TRAKTEER](http://trakteer.id/hanzerge), atau PM [𝗛𝗔𝗡𝗭𝝣𝗥𝗚𝝣](http://t.me/hanzprjct)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -222,7 +233,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Add AstrakoBot to your group",
+                                text="➕ Add 𝔸𝐧𝐧𝐚𝐛𝐞𝐥𝐥𝐞 to your group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -230,8 +241,8 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="Support Group",
-                                url=f"https://t.me/AstrakoBotSupport",
+                                text="💬 Support Group",
+                                url=f"https://t.me/AnnabelleSupport",
                             ),
                         ],
                         [
