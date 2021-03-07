@@ -115,8 +115,7 @@ And the following:
 
 ASTRAKOBOT_IMG = "https://telegra.ph/file/682b59e0f5a226b094081.jpg"
 
-DONATE_STRING = """Heya, senang mendengar Anda ingin berdonasi!
-𝔸𝐧𝐧𝐚𝐛𝐞𝐥𝐥𝐞 dihosting di server gratis dan memerlukan donasi jika kamu mau berdonasi, Anda dapat berdonasi dengan [TRAKTEER](http://trakteer.id/hanzerge), atau PM [𝗛𝗔𝗡𝗭𝝣𝗥𝗚𝝣](http://t.me/hanzprjct)."""
+DONATE_STRING = """Heya, senang mendengar Anda ingin berdonasi!\n𝔸𝐧𝐧𝐚𝐛𝐞𝐥𝐥𝐞 dihosting di server gratis dan memerlukan donasi jika kamu mau berdonasi, Anda dapat berdonasi dengan [TRAKTEER](http://trakteer.id/hanzerge), atau PM [𝗛𝗔𝗡𝗭𝝣𝗥𝗚𝝣](http://t.me/hanzprjct)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -233,7 +232,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="➕ Add 𝔸𝐧𝐧𝐚𝐛𝐞𝐥𝐥𝐞 to your group",
+                                text="➕ Add 𝔸𝐧𝐧𝐚𝐛𝐞𝐥𝐥𝐞 To Your Group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -247,14 +246,14 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="Getting started guide",
+                                text="📕 Panduan Pemula",
                                 url="https://t.me/OnePunchUpdates/29",
                             )
                         ],
                         [
                             InlineKeyboardButton(
-                                text="Source code",
-                                url="https://github.com/Astrako/AstrakoBot",
+                                text="💸 Donasi",
+                                url="https://trakteer.id/hanzerge",
                             )
                         ],
                     ]
